@@ -8,6 +8,9 @@ describe('Log into Global Meet', () => {
     })
 
     it ('Navigates to Webpage', () => {
+        cy.request('GET','web/ninadtelang').then((resp) => {
+            expect(resp.status).to.eq(200)
+        })
         cy.visit('https://regression.pgilab.com/web/ninadtelang')
     })
 
@@ -16,12 +19,12 @@ describe('Log into Global Meet', () => {
     })
 
     it ('Validate Credentials', () => {
-        cy.login()
+        // cy.loginGuest()
+        cy.loginHost()
     })
 
     it ('Logout', () => {
         cy.logout()
-
     })
 
 })

@@ -14,7 +14,7 @@ Cypress.Commands.add ("modals", () => {
 
 })
 
-Cypress.Commands.add ("login", () => {
+Cypress.Commands.add ("loginGuest", () => {
     cy.log('Enter Email')
     cy.get('#input_email-info').should('be.visible')
     cy.get('#input_email-info').type('Yoda@TheForce.com')
@@ -27,6 +27,19 @@ Cypress.Commands.add ("login", () => {
 
     cy.get('div.guest-continue-button.continue-button > pgi-text-button > button > span').click()
 
+})
+
+Cypress.Commands.add ("loginHost", () => {
+    cy.log('Enter Email')
+    cy.get('#input_email-info').should('be.visible')
+    cy.get('#input_email-info').type('6597076')
+    cy.get('.pgi-button-wrapper').click()
+
+    cy.log('Enter Password')
+    cy.get('#input_password-info').should('be.visible')
+    cy.get('#input_password-info').type('r44XkP33')
+
+    cy.get('#password-signin-btn > button > span').click()
 })
 
 Cypress.Commands.add ("logout", () => {
