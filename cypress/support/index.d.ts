@@ -18,7 +18,7 @@ declare namespace Cypress {
       // Exposes page object models from commands.js
       modals(): Chainable<any>
       loginGuest(): Chainable<any>
-      logout(): Chainable<any>
       loginHost(): Chainable<any>
+      logout(): Chainable<any>
     }
   }

@@ -8,10 +8,10 @@ describe('Log into Global Meet', () => {
     })
 
     it ('Navigates to Webpage', () => {
-        cy.request('GET','web/ninadtelang').then((resp) => {
+        cy.request('GET','ninadtelang').then((resp) => {
             expect(resp.status).to.eq(200)
         })
-        cy.visit('https://regression.pgilab.com/web/ninadtelang')
+        cy.visit('ninadtelang')
     })
 
     it ('Choose modal options', () => {

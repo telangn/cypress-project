@@ -25,6 +25,7 @@ Cypress.Commands.add ("loginGuest", () => {
     cy.get('pgi-label-input.guest-input.first-name.web-input-area.ng-untouched.ng-pristine.ng-invalid > div > input').type('Yoda')
     cy.get('pgi-label-input.guest-input.last-name.web-input-area.ng-untouched.ng-pristine.ng-invalid > div > input').type('Boda')
 
+    cy.log('Click Continue')
     cy.get('div.guest-continue-button.continue-button > pgi-text-button > button > span').click()
 
 })
@@ -39,6 +40,7 @@ Cypress.Commands.add ("loginHost", () => {
     cy.get('#input_password-info').should('be.visible')
     cy.get('#input_password-info').type('r44XkP33')
 
+    cy.log('Click Sign in')
     cy.get('#password-signin-btn > button > span').click()
 })
 
