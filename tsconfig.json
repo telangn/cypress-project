@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "allowJs": true,
+        "baseUrl": "../node_modules",
+        "types": [
+            "cypress"
+        ],
+        "outDir": "",
+        "target": "es5",
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "noImplicitAny": false,
+        "lib": ["es6", "dom"]
+    },
+    "include": [
+        "**/*.*"
+    ]
+}
