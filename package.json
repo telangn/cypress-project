@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run --spec \"cypress/integration/examples/globalMeet_spec.js\" "
+    "cypress:open": "DEBUG=cypress* cypress open",
+    "cypress:run": "cypress run --browser chrome --spec \"cypress/integration/examples/_test/*\""
   },
   "author": "Ninad Telang",
   "license": "ISC",

@@ -18,3 +18,7 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+before (() => {
+    Cypress.Cookies.preserveOnce('pgiid-cookie-optin', 'pgiid-ul-remote', 'ACCESS_TOKEN', 'TOKEN_EXPIRES_IN')
+})
