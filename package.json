@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "DEBUG=cypress* cypress open",
-    "cypress:run": "cypress run --browser chrome --spec \"cypress/integration/examples/_test/*\""
+    "cypress:run": "cypress run --browser chrome --record --key b96410e3-5fa0-4868-9b74-7c03e9ddb5a3 --spec \"cypress/integration/examples/_test/*\""
   },
   "author": "Ninad Telang",
   "license": "ISC",
